@@ -1,0 +1,28 @@
+/* Styles for the animation */
+@keyframes slide-in {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Styles for the page */
+body {
+    font-family: Times new roman;
+    background-color: #f2f2f2;
+    margin: 10;
+    padding: 20;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    animation: slide-in 1s ease-in-out;
+}

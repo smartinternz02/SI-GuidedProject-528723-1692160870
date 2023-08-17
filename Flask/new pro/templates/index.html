@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title >FINDING MISSING PERSON USING AI</title>
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("https://recfaces.com/wp-content/uploads/2021/01/face_scan_adobe.jpg") top center;
+            background-size: cover;
+            position: relative;
+            margin-bottom: -90px;
+        }
+  
+
+
+    </style>
+</head>
+<body>
+    <feildset align="center">
+<legend><h1 align="center"><u>FINDING MISSING PRESON USING AI</u></h1></legend>
+<table align="center">
+<td>
+<h3>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+         <lable><h3>Upload .jpg file</h></lable> 
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+</h3>
+</td>
+</table>
+</fieldset>
+</body>
+</html>
